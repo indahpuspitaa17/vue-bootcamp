@@ -1,0 +1,17 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    
+    <body class="bg-gray-200 flex justify-center items-center h-screen">
+        <div id="app">
+            <!-- Vue App Here -->
+            <my-button v-on:my-custom-event="handleMyButton"></my-button>
+            
+            <div v-if="data">{{ data.title }}({{ data.field }})</div>
+        </div>
+        
+        <script src="index.pack.js"></script>
+    </body>
+</html>

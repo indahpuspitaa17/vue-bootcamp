@@ -1,0 +1,44 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        
+        <style>
+            .red { color: red; }
+            .big { font-size: 100px; }
+            .underline { text-decoration: underline; }
+        </style>
+        
+    </head>
+    <body>
+        <div id="app" class="bg-blue-300 h-screen w-full flex flex-col justify-center items-center text-sm relative">
+            
+            <!-- Red Text if 5 > 1 -->
+            <div>Text 1</div>
+            
+            <!-- Use size for text size (inline) -->
+            <div>Text 2</div>
+            
+            <!-- underline and red text if toggle is true -->
+            <div>Text 3</div>
+            
+            <!-- orange text (inline) -->
+            <div>Text 4</div>
+            
+            <!-- red if toggle is true, otherwise big. Always underline -->
+            <div>Text 5</div>
+            
+        </div>
+        
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    size: 25,
+                    toggle: true,
+                },
+            });
+        </script>
+    </body>
+</html>

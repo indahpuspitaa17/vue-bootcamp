@@ -1,0 +1,53 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app" class="bg-blue-300 flex flex-col items-center h-screen w-full text-sm">
+            
+            <!-- Simple output text -->
+            <div>{{ example }}</div>
+            
+            <!-- Only Once -->
+            <div></div>
+            
+            <!-- Sample HTML -->
+            <div></div>
+            
+            <!-- Output 'text' without curly braces -->
+            <div></div>
+            
+            <!-- If answer is true, output 'Correct!'. Otherwise, 'Wrong!' -->
+            <div></div>
+            
+            <!-- Output: 'My dog is 9 years old' -->
+            <div></div>
+            
+            <!-- What is the area of this circle? (HINT: πr^2) -->
+            <!-- Where π = 3.14 -->
+            <div></div>
+            
+            <!-- Add a title attribute to show the explain text. -->
+            <!-- Add the string 'Hello! ' on the fly before the text -->
+            <div>Hover Over Me</div>
+        </div>
+        
+        <script>
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    example: 'Learning Never Exhausts The Mind.',
+                    onlyOnce: 'I will not update!',
+                    sampleHtml: '<ul><li>Item 1</li><li>Item 2</li></ul>',
+                    text: 'Another way to output text!',
+                    answer: true,
+                    age: 9,
+                    circleRadius: 10,
+                    explain: 'Here is some text that explains this div.'
+                }
+            });
+        </script>
+    </body>
+</html>

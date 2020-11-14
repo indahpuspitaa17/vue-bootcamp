@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    
+    <body class="bg-gray-200 flex flex-col items-center">
+        <div id="app" v-on:keyup.esc="globalPage = false" v-if="globalPage">
+            <!-- Example 1 - using javascript expression -->
+            <!-- When the button is clicked, it should increase exampleOne by 12 -->
+            <button v-on:click="exampleOne += 12">Example 1</button>
+            <div>{{ exampleOne }}</div>
+            
+            <!-- Example 2 - using a method -->
+            <!-- When the button is clicked, it should increase exampleTwo by 2 -->
+            <button v-on:click="increaseByTwo">Example 2</button>
+            <div>{{ exampleTwo }}</div>
+            
+            <!-- Example 3 - using a method with data -->
+            <!-- When the button is clicked, it should set exampleThree to data being passed in -->
+            <button v-on:click="assignData('hello')">Example 3</button>
+            <div>{{ exampleThree }}</div>
+            
+            <!-- Example 4 - using a method -->
+            <!-- When double clicked (dbclick), it should make the text appear! -->
+            <div v-on:dbclick="appear">Show</div>
+            <div v-if="show">Abracadabra</div>
+            
+            <!-- Example 5 - using a method -->
+            <!-- When the key esc is pressed, the whole page should disappear -->
+            
+        </div>
+        
+        <script src="index.pack.js"></script>
+    </body>
+</html>
