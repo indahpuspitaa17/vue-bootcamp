@@ -1,0 +1,25 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="app">
+            <!-- Vue App Here -->
+            <form method="post" action="#">
+                <input-field label="First Name" unique="first_name"></input-field>
+                <div>Current: {{ form.first_name }}</div>
+                <input-field label="Last Name" unique="last_name"></input-field>
+                <div>Current: {{ form.last_name }}</div>
+                <input-field label="Email" unique="email"></input-field>
+                <div>Current: {{ form.email }}</div>
+                <div class="input-wrapper">
+                    <button>Contact Us</button>
+                </div>
+            </form>
+        </div>
+        
+        <script src="index.pack.js"></script>
+    </body>
+</html>
