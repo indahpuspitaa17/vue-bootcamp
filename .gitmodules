@@ -1,0 +1,3 @@
+[submodule "javascript-bootcamp"]
+	path = javascript-bootcamp
+	url = https://github.com/indahpuspitaa17/javascript-bootcamp.git
